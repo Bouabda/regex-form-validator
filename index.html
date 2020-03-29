@@ -4,10 +4,68 @@
     <meta charset="utf-8" />
     <title>RegEx Form</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="validation.js"></script>
   </head>
   <body>
-    <h1>New User Signup</h1>
+    
+<div class="form">
+      
+      <div class="tab-content">
+        <div id="signup">   
+          <h1>New User Sign Up</h1>
+          
+          <form action="/" method="post">
+          
+            <div class="field-wrap">
+              <label>
+                User Name<span class="req">*</span>
+              </label><br><br>
+              <input id="user" type="text" required autocomplete="off" />
+            </div>
 
-    <script type="text/javascript" src="validation.js"></script>
+          <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label><br><br>
+            <input id="email"  type="text"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Set A Password<span class="req">*</span>
+            </label><br><br>
+            <input id="password" type="password"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Set A valid Phone Number<span class="req">*</span>
+            </label><br><br>
+            <input id="tel" type="text"required autocomplete="off"/>
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              Set A valid Card Number<span class="req">*</span>
+            </label><br><br>
+            <input id="card" type="text"required autocomplete="off"/>
+          </div>
+
+          <button type="#" class="button button-block">Sign up</button>
+          
+          </form>
+
+        </div>
+        
+        <div id="login">   
+          
+
+        </div>
+        
+      </div><!-- tab-content -->
+      
+</div> <!-- /form -->
+   
   </body>
 </html>
